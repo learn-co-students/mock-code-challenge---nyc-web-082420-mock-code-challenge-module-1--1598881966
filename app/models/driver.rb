@@ -18,7 +18,7 @@ class Driver
     end
 
     def passenger_names
-        self.passenger_names.map{|rides| rides.passenger}.uniq
+        self.driver_rides.map{|rides| rides.passenger}.uniq
     end
 
     def driver_rides

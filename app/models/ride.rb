@@ -35,7 +35,4 @@ class Ride
 
     end
 
-
-
-
 end
