@@ -27,7 +27,7 @@ ride6 = Ride.new(stacey, arnold, 27.2)
 ride7 = Ride.new(bobby, lance, 15.0)
 ride8 = Ride.new(steve, arnold, 99.9)
 ride9 = Ride.new(henry, carol, 91.0)
-ride10 = Ride.new(bobby, lance, 14.9)
+ride10 = Ride.new(bobby, lance, 14.6)
 
 #Expect steve to me the only premium member
 

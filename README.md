@@ -34,13 +34,13 @@ A Passenger should be initialized with a name as a string. After the Passenger h
 #### Ride
 A Ride should be initialized with a driver (as a Driver object), a passenger (as a Passenger object), and a distance (as a float i.e. `3.2`). The distance refers to miles.
 - `Ride#passenger`
-  - Returns the Passenger object for that ride
+  <!-- - Returns the Passenger object for that ride -->
 - `Ride#driver`
-  - Returns the Driver object for that ride
+  <!-- - Returns the Driver object for that ride -->
 - `Ride#distance`
-  - Returns the distance of the ride
+  <!-- - Returns the distance of the ride -->
 - `Ride.average_distance`
-  - Returns the average distance across ALL rides
+  <!-- - Returns the average distance across ALL rides -->
 
 #### Driver
 A Driver should be initialized with a name as a string.
@@ -53,4 +53,4 @@ A Driver should be initialized with a name as a string.
 - `Driver.all`
   <!-- - Returns an array of all Drivers -->
 - `Driver.mileage_cap(distance)`
-  - Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
+  <!-- - Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage -->
