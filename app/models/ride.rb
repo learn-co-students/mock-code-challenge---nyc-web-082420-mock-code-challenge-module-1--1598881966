@@ -15,12 +15,16 @@ class Ride
     end
 
     def self.all
+        # added all method to access passengers and drivers from SSOT
         @@all
     end
 
     def self.average_distance
-# - `Ride.average_distance`
-#   - Returns the average distance across ALL rides
-        
+        # - `Ride.average_distance`
+        #   - Returns the average distance across ALL rides
+        total_miles = Ride.all.map {|ride| ride.distance}.sum
+        total_trips = Ride.all.count
+        average = total_miles / total_trips
+        "The average distance across all rides is #{average.round(2)} miles!"
     end
 end
