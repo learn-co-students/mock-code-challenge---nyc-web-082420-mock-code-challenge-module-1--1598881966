@@ -11,7 +11,7 @@ class Passenger
     end
 
     def self.all
-        @@all = all
+        @@all
     end
 
     def passenger_name
