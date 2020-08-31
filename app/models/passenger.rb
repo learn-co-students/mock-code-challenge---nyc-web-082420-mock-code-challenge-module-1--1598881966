@@ -24,10 +24,10 @@ class Passenger
     end 
 
     #Returns the floating number that represents the total distance the passenger has travelled using the service
-    #.reduce will generate a sum
+    #we have a rides method - telling us all the rides a passenger has been on - now we need to map to find the distance
     def total_distance
-        distance.reduce(0.0) {|sum, num| sum + num}.to_f / distance.size
-    end 
+        self.rides.map {|ride| ride.distance}.reduce(0.0) {|sum, num| sum + num}.to_f
+    end
 
     #Returns an array of all Passengers who have travelled over 100 miles in total with the service
     def self.premium_memebers

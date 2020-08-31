@@ -13,11 +13,12 @@ class Ride
     def self.all
         @@all 
     end 
+
+    #Returns the average distance across ALL rides
+    def self.average_distance
+        self.distance.reduce(0.0) {|sum, num| sum + num}.to_f / distance.size
+    end 
+
 end 
 
 
-
-# #### Ride
-# - 
-# - `Ride.average_distance`
-#   - Returns the average distance across ALL rides
