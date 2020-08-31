@@ -12,18 +12,19 @@ class Driver
     end
 
     def passenger_names
-        Ride.all.select { |names| names.rides == self}.uniq
+        rides.select { |names| names.passenger}.uniq
     end
 
-    def rides 
-        Ride.all.select { |ride| ride == self}
+    def rides #works
+        Ride.all.select { |ride| ride.driver == self}
     end
 
     def self.mileage_cap(distance)
-        Ride.all.map { |cap| 
+        Ride.all.each do |cap| 
             if cap.distance > distance 
-            return cap.driver
-        }
+            cap.driver
+            end
+        end
     end
 
 
