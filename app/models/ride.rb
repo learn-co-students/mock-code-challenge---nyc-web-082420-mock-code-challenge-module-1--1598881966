@@ -21,14 +21,3 @@ class Ride
         total_dist /= Ride.all.count
     end
 end
-
-# #### Ride
-# A Ride should be initialized with a driver (as a Driver object), a passenger (as a Passenger object), and a distance (as a float i.e. `3.2`). The distance refers to miles.
-# - `Ride#passenger` DONE
-#   - Returns the Passenger object for that ride
-# - `Ride#driver` DONE
-#   - Returns the Driver object for that ride
-# - `Ride#distance` DONE
-#   - Returns the distance of the ride
-# - `Ride.average_distance` DONE
-#   - Returns the average distance across ALL rides
