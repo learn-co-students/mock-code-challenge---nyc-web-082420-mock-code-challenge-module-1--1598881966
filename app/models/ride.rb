@@ -11,6 +11,12 @@ class Ride
         @@all << self
     end
 
+    def self.all
+        @@all
+    end
     
+    def self.average_distance
+        #total distance / count
+    end    
 
 end    
