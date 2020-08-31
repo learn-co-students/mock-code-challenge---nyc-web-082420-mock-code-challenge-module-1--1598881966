@@ -1,13 +1,18 @@
 
 class Passenger
-    
+
     attr_reader :name
-    attr_writer :ride, :driver
     
     def initialize(name)
         @name = name.to_s
-        @ride = ride
-        @driver = driver
+    end
+
+    def rides
+        Ride.all.select {|ride| ride.passenger == self}
+    end
+
+    def drivers
+        Driver.all.select {|driver| driver.passenger == self}
     end
 
 end

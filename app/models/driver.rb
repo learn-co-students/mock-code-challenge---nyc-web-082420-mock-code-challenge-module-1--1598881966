@@ -1,13 +1,10 @@
 
 class Driver
 
-    attr_reader :name
-    attr_writer :passenger, :ride
+    attr_accessor :name
 
     def initialize(name)
-        @name = name.to_s
-        @passenger = passenger
-        @ride = ride
+        @name = name
     end
 
 end
