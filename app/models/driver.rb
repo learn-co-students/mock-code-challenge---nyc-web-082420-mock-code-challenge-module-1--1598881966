@@ -26,8 +26,11 @@ class Driver
     end 
 
     #Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
+    #Conditional - if the drivers have gone over the cap, return them
     def self.mileage_cap(distance)
+        if distance.driver > mileage_cap
         Ride.distance.map {|ride| ride.driver}.to_f
+        end 
     end 
 
 end
