@@ -16,7 +16,7 @@ class Driver
     end
 
     def passenger_names
-        @@passengers.name
+        @@passengers.name.uniq
     end
 
     def rides
@@ -28,7 +28,7 @@ class Driver
     end
 
     def self.mileage_cap(distance)
-        
+        Ride.all.select { |driver| driver.distance > distance }
     end
 
 

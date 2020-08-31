@@ -12,7 +12,18 @@ class Ride
         @driver = driver
         @passenger = passenger
         @distance = 0.0
+        @@all << self
     end
+
+    def self.ride_average
+        
+        self.all
+
+    end
+
+    def 
+
+
 
 
 
