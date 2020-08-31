@@ -1,4 +1,5 @@
 class Passenger
+    
     attr_reader :name
 
     @@all = []
@@ -23,6 +24,7 @@ class Passenger
 
     def drivers
         # array of all driers ive(instance) had
+        # yuck. Im determined to figure a pleasant way to list!
         "#{self.name}, you have had these drivers:"
         self.rides.map {|ride| ride.driver}.uniq
         # with names returned as strings in array
@@ -31,6 +33,7 @@ class Passenger
 
     def total_distance
         # total distance of my rides
+        # i like when it looks nice in terminal, maybe it looks better in mac terminal. VSCode shows white and red text :(
         "#{self.name}, you have riden this many miles:"
         Ride.all.select {|ride| ride.passenger == self}.map {|ride| ride.distance}.sum
     end
@@ -40,7 +43,7 @@ class Passenger
         #   - Returns an array of all Passengers who have travelled over 100 miles in total with the service
         total = Ride.all.map {|ride| ride.passenger}.map {|ride| ride.total_distance}.uniq
         # I think in only need this second code. Unsure if I could use variables to lessen the time issue of .map.find_all.uniq
-        each_passenger = Ride.all.map {|ride| ride.passenger}.find_all {|passenger| passenger.total_distance > 100}.uniq
+        each_passenger = Ride.all.map {|ride| ride.passenger}.find_all {|passenger| passenger.total_distance > 100}.uniq #this one works for deliverables
         passenger_name = each_passenger.map{|passenger|"#{passenger.name}, with #{passenger.total_distance.round(1).to_s} miles"}
         "These are our passengers who have riden over 100 miles: #{passenger_name.join(", ")}"
     end

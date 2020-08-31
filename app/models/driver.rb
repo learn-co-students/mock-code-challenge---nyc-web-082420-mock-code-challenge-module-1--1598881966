@@ -1,4 +1,5 @@
 class Driver
+
     attr_accessor :name
 
     @@all = []
@@ -40,8 +41,9 @@ class Driver
         #   - Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
         total = Ride.all.select {|ride| ride.driver}.map {|ride| ride.driver.total_distance}
         # I think in only need this second code. Unsure if I could use variables to lessen the time issue of .map.find_all.uniq
-        each_driver = Driver.all.select {|driver| driver.total_distance}.find_all {|driver| driver.total_distance > distance}
+        each_driver = Driver.all.select {|driver| driver.total_distance}.find_all {|driver| driver.total_distance > distance} #this one for deliverable
         driver_name = each_driver.map{|driver|"#{driver.name}, with #{driver.total_distance.round(1).to_s} miles"}
         "These are our drivers who have driven over the cap: #{driver_name.join(", ")}"
     end
+    
 end
