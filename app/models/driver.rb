@@ -6,6 +6,9 @@ class Driver
 
     def initialize(name)
         @name = name
+        @passenger = passenger
+        @ride = ride
+        @distance = 100 # does this make a mileage cap? or can distance only be 100? hmmmm.
         @@all << self
     end
 
@@ -19,8 +22,17 @@ class Driver
     end
 
     def rides
-        
+        Ride.all.select {|ride| ride.driver == self} #undefined local variable or method 'driver' for main:Object
     end
+
+    def mileage_cap(distance)
+        # Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
+        if self.distance > # mileage cap - not sure how to represent this
+            #returns array of all drivers who have driven over the mileage
+        end
+
+    end
+
 
 
 end
