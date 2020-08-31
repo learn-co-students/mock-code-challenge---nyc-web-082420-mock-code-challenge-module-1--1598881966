@@ -29,6 +29,7 @@ def self.all
 end
 
 def self.premium_memebers
+end
 
 
 

@@ -7,4 +7,9 @@ end
 
 # Put your variables here~!
 
+
+def rides
+  self.ride.all
+end
+
 binding.pry
