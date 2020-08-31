@@ -12,7 +12,7 @@ class Passenger
     end
 
     def self.premium_members
-        
+        Passenger.all.select {|pass| pass.total_distance > 100}
     end
 
     def rides
@@ -43,5 +43,5 @@ end
 #   - Returns the floating number that represents the total distance the passenger has travelled using the service
 # - `Passenger.all` DONE
 #   - Returns an array of all Passengers
-# - `Passenger.premium_members`
+# - `Passenger.premium_members` DONE
 #   - Returns an array of all Passengers who have travelled over 100 miles in total with the service
