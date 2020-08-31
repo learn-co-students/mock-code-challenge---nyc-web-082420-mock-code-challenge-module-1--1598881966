@@ -30,16 +30,3 @@ class Driver
     end
 end
 
-# #### Driver
-# A Driver should be initialized with a name as a string.
-# - `Driver#name` DONE
-#   - Returns the driver's name
-# - `Driver#passenger_names` DONE
-#   - Returns an array of all Passengers' names a driver has driven. The names should be **unique** (no repeats).
-# - `Driver#rides` DONE
-#   - Returns an array of all Rides a driver has made
-# - `Driver.all` DONE
-#   - Returns an array of all Drivers
-# - `Driver.mileage_cap(distance)` DONE
-#   - Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
-
