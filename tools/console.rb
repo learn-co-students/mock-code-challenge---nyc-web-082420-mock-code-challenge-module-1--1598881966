@@ -17,8 +17,8 @@ bob = Driver.new("Bob")
 joe = Driver.new("Joe")
 
 
-ride_test = Ride.new(dan, kevin, 103)
-ride_kevin_test = Ride.new(bob, kevin, 102)
-ride_test2 = Ride.new(joe, steve, 101)
-ride_test1 = Ride.new(joe, steve, 99)
+ride_test = Ride.new(dan, kevin, 103.2)
+ride_kevin_test = Ride.new(bob, kevin, 102.5)
+ride_test2 = Ride.new(joe, steve, 101.1)
+ride_test1 = Ride.new(joe, steve, 99.5)
 binding.pry

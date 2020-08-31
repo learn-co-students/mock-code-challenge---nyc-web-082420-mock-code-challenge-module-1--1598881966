@@ -16,7 +16,7 @@ class Passenger
     end
 
     def total_distance
-        rides.map{|r| r.distance}.sum
+        rides.map{|r| r.distance}.sum.to_f
     end
 
     def self.all
@@ -24,7 +24,7 @@ class Passenger
     end
 
     def self.premium_members
-        self.all.select{|p| p.total_distance > 100.00}
+        self.all.select{|p| p.total_distance > 100}
     end
 end
 
