@@ -1,5 +1,8 @@
 # BetterLyft™ 
 
+
+Johnnie Gonzalez
+
 ## Deliverables
 You are building an app for a Lyft/Uber competitor. The models that you will use for your application are: Passenger, Driver, and Ride.
 
