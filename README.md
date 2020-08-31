@@ -27,11 +27,11 @@ A Passenger should be initialized with a name as a string. After the Passenger h
   - Returns an array of Ride instances that this person has been on
 - `Passenger#drivers` ***Done***
   - Returns an array of Driver instances that this person has rode with
-- `Passenger#total_distance` 
+- `Passenger#total_distance` ***Done***
   - Returns the floating number that represents the total distance the passenger has travelled using the service
 - `Passenger.all` ***Done***
   - Returns an array of all Passengers
-- `Passenger.premium_members`
+- `Passenger.premium_members` ***Done***
   - Returns an array of all Passengers who have travelled over 100 miles in total with the service
 
 #### Ride
@@ -42,19 +42,19 @@ A Ride should be initialized with a driver (as a Driver object), a passenger (as
   - Returns the Driver object for that ride
 - `Ride#distance` ***Done***
   - Returns the distance of the ride
-- `Ride.average_distance`
+- `Ride.average_distance` ***Done***
   - Returns the average distance across ALL rides
   
 #### Driver
 A Driver should be initialized with a name as a string. ***Done***
 - `Driver#name` ***Done***
   - Returns the driver's name
-- `Driver#passenger_names` ***TEST THIS***
+- `Driver#passenger_names` ***Done***
   - Returns an array of all Passengers' names a driver has driven. The names should be **unique** (no repeats).
-- `Driver#rides` ***TEST THIS***
+- `Driver#rides` ***Done***
   - Returns an array of all Rides a driver has made
 - `Driver.all` ***Done***
   - Returns an array of all Drivers
-- `Driver.mileage_cap(distance)`
+- `Driver.mileage_cap(distance)` ***Done***
   - Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
 
