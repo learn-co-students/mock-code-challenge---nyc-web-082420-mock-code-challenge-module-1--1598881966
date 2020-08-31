@@ -21,9 +21,9 @@ class Driver
         Ride.all.select {}
     end
 
-    # REVIEW - drives method returns array of all rides driver has made
+    # drives method returns array of all rides driver has made
     def rides
-        Ride.all.filter {|rides| rides.name == self}
+        Ride.all.filter {|driver| drivre.name == self}
     end
 
     # class method all should return all Drivers
@@ -31,9 +31,9 @@ class Driver
         @@all
     end
 
-    # mileage_cap w/arg of distance returns array of all Drivers who drove over distance
+    #REVIEW - mileage_cap w/arg of distance returns array of all Drivers who drove over distance
     def self.mileage_cap(distance)
-        Ride.all.filter{}
+        Ride.all.filter{|distance| distance.driver >= distance.to_f}
     end
     
 end
