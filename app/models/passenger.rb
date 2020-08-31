@@ -24,7 +24,7 @@ class Passenger
     end
 
     def self.premium_members
-
+        self.all.select{|p| p.total_distance > 100.00}
     end
 end
 

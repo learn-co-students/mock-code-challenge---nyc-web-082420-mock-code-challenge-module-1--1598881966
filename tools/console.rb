@@ -10,13 +10,15 @@ end
 
 kevin = Passenger.new("Kevin")
 brian = Passenger.new("Brian")
+steve = Passenger.new("Steve")
 
 dan = Driver.new("Dan")
 bob = Driver.new("Bob")
+joe = Driver.new("Joe")
 
 
-ride_test = Ride.new(dan, kevin, 12.3)
-ride_kevin_test = Ride.new(bob, kevin, 15.4)
-ride_test2 = Ride.new("Joe", "Steve", 15.3)
-ride_test1 = Ride.new("Joe", "Steve", 19.1)
+ride_test = Ride.new(dan, kevin, 103)
+ride_kevin_test = Ride.new(bob, kevin, 102)
+ride_test2 = Ride.new(joe, steve, 101)
+ride_test1 = Ride.new(joe, steve, 99)
 binding.pry

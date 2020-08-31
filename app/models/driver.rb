@@ -19,8 +19,12 @@ class Driver
         @@all
     end
 
-    def self.mileage_cap(distance)
-        
+    def total_distance
+        rides.map{|r| r.distance}.sum
+    end
+
+    def self.mileage_cap(distance)    #created total_distance method to get this to work to refactor better and ensure single responsibilty princle instead writing both methods in one
+        self.all.select{|d| d.total_distance > distance}
     end
 end
 
