@@ -16,9 +16,18 @@ class Driver
         @@all
     end
 
+    def rides
+        Ride.all.select {|ride| ride.driver == self}
+    end
+
+    def passenger_name
+        rides.all.collect {|ride| ride.passenger}
+    end
+
     def mileage_cap (distance)
         
     end
 
 end
 
+#so I know the code is broken, but ive created the connection between the "belongs to" whcih is my ride.rb

@@ -24,6 +24,10 @@ class Passenger
         rides.all.collect {|ride| ride.drivers}
     end
 
+    def total_distance
+    end
+
+
     def preimum_members
         if Passenger.new > 0 miles && Passenger.new < 100
             passanger
@@ -34,3 +38,6 @@ class Passenger
 
 
 end
+
+#so I know the code is broken, but ive created the connection between the "belongs to" whcih is my ride.rb
+
