@@ -3,6 +3,8 @@
 
 class Ride
 
+    @@all = []
+
     attr_reader :driver, :passenger
 
 
