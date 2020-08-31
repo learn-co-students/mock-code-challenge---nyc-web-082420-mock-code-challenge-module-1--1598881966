@@ -29,7 +29,7 @@ class Driver
     #Conditional - if the drivers have gone over the cap, return them
     def self.mileage_cap(distance)
         if distance.driver > mileage_cap
-        Ride.distance.map {|ride| ride.driver}.to_f
+            Ride.distance.map {|ride| ride.driver}
         end 
     end 
 
