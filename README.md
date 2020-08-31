@@ -19,39 +19,39 @@ We'd like for you build out the following methods for each class. As you work, w
 #### Passenger
 A Passenger should be initialized with a name as a string. After the Passenger has been initialized, it shouldn't be changed.
 - `Passenger#name`
-  - Returns the name of the passenger
+  - Returns the name of the passenger done
 - `Passenger#rides`
-  - Returns an array of Ride instances that this person has been on
+  - Returns an array of Ride instances that this person has been on done
 - `Passenger#drivers`
-  - Returns an array of Driver instances that this person has rode with
+  - Returns an array of Driver instances that this person has rode with done
 - `Passenger#total_distance`
-  - Returns the floating number that represents the total distance the passenger has travelled using the service
+  - Returns the floating number that represents the total distance the passenger has travelled using the service done
 - `Passenger.all`
-  - Returns an array of all Passengers
+  - Returns an array of all Passengers done
 - `Passenger.premium_members`
-  - Returns an array of all Passengers who have travelled over 100 miles in total with the service
+  - Returns an array of all Passengers who have travelled over 100 miles in total with the service done
 
 #### Ride
 A Ride should be initialized with a driver (as a Driver object), a passenger (as a Passenger object), and a distance (as a float i.e. `3.2`). The distance refers to miles.
 - `Ride#passenger`
-  - Returns the Passenger object for that ride
+  - Returns the Passenger object for that ride done 
 - `Ride#driver`
-  - Returns the Driver object for that ride
+  - Returns the Driver object for that ride done
 - `Ride#distance`
-  - Returns the distance of the ride
+  - Returns the distance of the ride done
 - `Ride.average_distance`
-  - Returns the average distance across ALL rides
+  - Returns the average distance across ALL rides done
   
 #### Driver
 A Driver should be initialized with a name as a string.
 - `Driver#name`
-  - Returns the driver's name
+  - Returns the driver's name done
 - `Driver#passenger_names`
-  - Returns an array of all Passengers' names a driver has driven. The names should be **unique** (no repeats).
+  - Returns an array of all Passengers' names a driver has driven. The names should be **unique** (no repeats). done, no repeats
 - `Driver#rides`
-  - Returns an array of all Rides a driver has made
-- `Driver.all`
-  - Returns an array of all Drivers
+  - Returns an array of all Rides a driver has made done
+- `Driver.all` 
+  - Returns an array of all Drivers done
 - `Driver.mileage_cap(distance)`
-  - Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
+  - Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage done
 
