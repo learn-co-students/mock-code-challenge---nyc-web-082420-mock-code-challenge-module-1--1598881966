@@ -16,25 +16,10 @@ class Ride
     end
 
     def self.ride_average
-        
-        self.all
+
+        self.all.select { |ride| ride.distance == distance/100}
 
     end
-
-    def 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
