@@ -33,19 +33,38 @@
 class Passenger 
       attr_reader   :name
       attr_accessor :miles
+
+      attr_writer   :memebership
       
+
       @@rides = [ ]
+    
+      @@premium_members_list = [ ]
+
       @@all   = [ ]
 
+
       def 
-          initialize(name, miles=0)
-          @name  = name
-          @miles = miles
+          initialize(name, miles=0, memebership="basic")
+          @name  = name.to_s
+          @miles = miles.to_f
+
+          @memebership = memebership
 
           @@all << self
       end
       def self.all 
           @@all    end
+
+     def 
+         premium_members 
+         if(self.miles >= 100)
+             puts "Ayyy! Welcome to the club #{self.name}! You are now a Premium Member! ^_^"
+         else
+            miles_until_prem = (100 - self.miles)
+             puts "Sorry #{self.name}-- You got  [ #{miles_until_prem} miles ]  to go  :T"
+         end
+    end 
 
 
     
