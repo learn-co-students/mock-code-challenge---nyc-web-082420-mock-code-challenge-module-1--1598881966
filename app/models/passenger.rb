@@ -28,5 +28,5 @@ class Passenger
         self.rides.each {|driven| dist += driven.distance}
         dist
     end
- 
+
 end
