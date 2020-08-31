@@ -5,6 +5,13 @@ def reload
 end
 
 
-# Put your variables here~!
+
+breezy = Passenger.new("Chris Brown")
+cici = Passenger.new("Ciara")
+
+
+
+
+
 
 binding.pry
