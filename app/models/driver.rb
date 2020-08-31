@@ -10,9 +10,11 @@ class Driver
     def self.all
         @@all
     end
+    
 
-    def passenger_names 
-        self.all.select { |passenger| passenger.name == self}
+
+    def passenger_names
+        rides.map { |ride| ride.passenger.name}.uniq
     end
 
     def rides
@@ -20,4 +22,7 @@ class Driver
     end
 
     def self.mileage_cap(distance)
+        self.all.select { |driver| driver.length > distance}
+
+    end
 end
