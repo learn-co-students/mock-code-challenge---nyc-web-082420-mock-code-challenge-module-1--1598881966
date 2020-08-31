@@ -20,9 +20,13 @@ class Driver
         self.rides.map { |ride| ride.passenger.name }.uniq
     end    
 
+    def total_distance
+        distances = self.rides.map { |ride| ride.distance }
+        distances.sum
+    end  
+
     def self.milage_cap(distance)
-        #add together distance of all rides driven for every driver, return array of all drivers who drove more than argument
-        
+        self.all.select { |driver| driver.total_distance > distance }
     end    
 
 
