@@ -25,6 +25,6 @@ class Ride
         total_miles = Ride.all.map {|ride| ride.distance}.sum
         total_trips = Ride.all.count
         average = total_miles / total_trips
-        "The average distance across all rides is #{average.round(2)} miles!"
+        "Our rides are averaging #{average.round(1)} miles, over #{total_trips} trips!"
     end
 end

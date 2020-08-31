@@ -17,11 +17,13 @@ class Passenger
 
     def rides
         # array of all rides ive(instance) been on
+        p "#{self.name}, you have been on these rides:"
         Ride.all.select {|ride| ride.passenger == self}
     end
 
     def drivers
         # array of all driers ive(instance) had
+        "#{self.name}, you have had these drivers:"
         self.rides.map {|ride| ride.driver}.uniq
         # with names returned as strings in array
         # jake.rides.map {|ride| ride.driver.name}.uniq
@@ -29,6 +31,7 @@ class Passenger
 
     def total_distance
         # total distance of my rides
+        "#{self.name}, you have riden this many miles:"
         Ride.all.select {|ride| ride.passenger == self}.map {|ride| ride.distance}.sum
     end
 
@@ -38,6 +41,8 @@ class Passenger
         total = Ride.all.map {|ride| ride.passenger}.map {|ride| ride.total_distance}.uniq
         # I think in only need this second code. Unsure if I could use variables to lessen the time issue of .map.find_all.uniq
         each_passenger = Ride.all.map {|ride| ride.passenger}.find_all {|passenger| passenger.total_distance > 100}.uniq
+        passenger_name = each_passenger.map{|passenger|"#{passenger.name}, with #{passenger.total_distance.round(1).to_s} miles"}
+        "These are our passengers who have riden over 100 miles: #{passenger_name.join(", ")}"
     end
     
 end
