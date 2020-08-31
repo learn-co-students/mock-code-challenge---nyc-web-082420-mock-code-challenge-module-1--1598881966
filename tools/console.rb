@@ -9,11 +9,16 @@ end
 
 jay = Passenger.new("Jay")
 jack = Passenger.new("Jack")
+mike = Passenger.new("Mike")
 
 harry = Driver.new("Harry")
+shawn = Driver.new("Shawn")
 
 
-Ride.new(jay, harry)
-Ride.new(jack, harry)
+Ride.new(harry, jay,100)
+Ride.new(shawn, jay,200)
+
+Ride.new(harry, jack,50)
+Ride.new(harry, mike,60)
 
 binding.pry
