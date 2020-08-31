@@ -1,3 +1,5 @@
+require_relative ' ..tools/console.rb'
+
 class Driver
     # attrs
     attr_accessor :name

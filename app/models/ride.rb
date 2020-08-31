@@ -1,3 +1,4 @@
+require_relative ' ..tools/console.rb'
 
 class Ride
 

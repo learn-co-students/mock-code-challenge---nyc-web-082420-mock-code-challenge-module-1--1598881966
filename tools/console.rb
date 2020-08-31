@@ -28,6 +28,7 @@ Ride_3 = Ride.new(carl, dani, 150)
 Ride_4 = Ride.new(anna, dani, 200)
 
 
-
+# to test
+dani.total_distance
 
 binding.pry

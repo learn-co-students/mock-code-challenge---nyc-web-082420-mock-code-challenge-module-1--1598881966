@@ -1,3 +1,5 @@
+require_relative ' ..tools/console.rb'
+
 class Passenger
     # attrs
     attr_reader :name
