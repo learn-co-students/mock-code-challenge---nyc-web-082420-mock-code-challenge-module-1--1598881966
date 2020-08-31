@@ -25,9 +25,9 @@ class Passenger
 
 
     def total_distance
-         total = 0
+        total = 0
         rides.each { |ride| total += ride.distance }
-        total
+        return total
         
     end
     

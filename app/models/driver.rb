@@ -11,8 +11,6 @@ class Driver
         @@all
     end
     
-
-
     def passenger_names
         rides.map { |ride| ride.passenger.name}.uniq
     end
