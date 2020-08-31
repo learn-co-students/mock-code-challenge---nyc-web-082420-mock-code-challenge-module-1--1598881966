@@ -7,6 +7,10 @@ class Passenger
         @@all << self
     end
 
+    def self.all
+        @@all
+    end
+
     def name
         @name
     end
@@ -20,7 +24,13 @@ class Passenger
     end
 
     def total_distance
-        
+        self.rides.map {|ride| ride.distance}.inject {|total, value| total += value}
+    end
+
+    def self.premium_members
+        self.all.select do |passenger|
+            passenger.total_distance > 100
+        end
     end
 
 

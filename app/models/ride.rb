@@ -25,4 +25,14 @@ class Ride
     def distance
         @distance
     end
+
+    def self.average_distance
+        distances = self.all.map do |ride|
+            ride.distance
+        end
+        count1 = distances.count
+
+        distances/count1
+
+    end
 end

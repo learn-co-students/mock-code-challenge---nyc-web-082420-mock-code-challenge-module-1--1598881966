@@ -1,3 +1,5 @@
+Mamadou Barry
+
 # BetterLyft™ 
 
 ## Deliverables
