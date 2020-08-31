@@ -22,13 +22,14 @@ class Passenger
         end 
     end 
 
-    def drivers
+    def drivers  #should return array of driver instances through ride 
         Ride.map do |ride|
             ride.driver 
         end 
     end 
 
-    def total_distance
+    def total_distance(miles)
+        total_distance += miles.sum 
     end 
 
     def premium_members
