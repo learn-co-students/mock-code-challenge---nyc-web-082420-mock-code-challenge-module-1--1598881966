@@ -1,5 +1,5 @@
 class Driver
-    
+
     attr_reader :name
         @@all=[]
 
@@ -19,6 +19,7 @@ class Driver
     def passenger_names
         rides.map{|ride|ride.passenger.name}.uniq
     end
+    
     def total_distance
         rides.map{|ride|ride.distance}.sum   #moved this from passenger class to use as helper here since it worked for premium members on passenger
     end

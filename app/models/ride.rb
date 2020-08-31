@@ -18,5 +18,5 @@ class Ride
         total_distance = Ride.all.map{|ride|ride.distance}
         total_distance.sum/total_distance.length
     end
-    
+
 end
