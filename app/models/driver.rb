@@ -27,4 +27,5 @@ class Driver
   def driver_total_mile
     self.rides.sum{|ride| ride.distance}
   end
+
 end

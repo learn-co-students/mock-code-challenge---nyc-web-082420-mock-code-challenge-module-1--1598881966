@@ -24,5 +24,6 @@ ride3 = Ride.new(passenger2, driver1, 20)
 ride4 = Ride.new(passenger3, driver1, 40)
 ride5 = Ride.new(passenger4, driver3, 30)
 ride6 = Ride.new(passenger3, driver4, 63)
-
+#ride7 duplicate check for uniqs Driver#passenger_names
+ride7 = Ride.new(passenger3, driver4, 60)
 pry.start

@@ -28,5 +28,4 @@ class Passenger
     self.rides.sum{|ride| ride.distance}.to_f
   end
 
-
 end
