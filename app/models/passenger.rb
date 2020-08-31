@@ -13,19 +13,20 @@ class Passenger
     end    
 
     def rides
-        Rides.all.select { |ride| ride.passenger == self }
+        Ride.all.select { |ride| ride.passenger == self }
     end    
 
     def drivers
-        self.rides.map { |ride| ride.driver }
+        self.rides.map { |ride| ride.driver }.uniq
     end
     
     def total_distance
-        #
+        distances = self.rides.map { |ride| ride.distance }
+        distances.sum
     end  
     
     def self.premium_members
         #
     end
-        
+
 end    
