@@ -12,16 +12,36 @@ class Driver
     def initialize(name)
         @name = name
         @@passengers = []
+        @@ll << self
     end
 
     def passenger_names
-        Ride.all.select { |passenger| passenger.driver == self}
+        @@passengers.name
     end
 
-    def rides 
-
-
+    def rides
+        Ride.all.select { |rides| rides.driver == self}
     end
+
+    def self.all
+        @@all
+    end
+
+    def self.mileage_cap(distance)
+        
+    end
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
