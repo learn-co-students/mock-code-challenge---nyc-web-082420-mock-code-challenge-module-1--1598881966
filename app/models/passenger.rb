@@ -40,8 +40,9 @@ class Passenger
 
     # class method premium members is an array of all passengers who travelled more than 100 mi
     def self.premium_members
-        # need to invoke average distance?
-
+        self.total_distance.filter do |passenger_instance|
+            passenger_instance.total_distance > 100
+        end
     end
 
 end

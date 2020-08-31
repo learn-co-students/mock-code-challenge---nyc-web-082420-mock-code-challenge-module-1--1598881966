@@ -8,4 +8,9 @@ end
 
 # Put your variables here~!
 
+# Drivers
+
+# Passengers
+
+
 binding.pry
