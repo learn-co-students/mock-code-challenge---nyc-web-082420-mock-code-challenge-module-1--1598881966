@@ -8,7 +8,7 @@ end
 
 jess = Driver.new("Jessica")
 rach = Driver.new("Rachel")
-jill = Driver.new("Jilll")
+jill = Driver.new("Jill")
 
 brian = Passenger.new("Brian")
 jake = Passenger.new("Jake")
