@@ -16,5 +16,11 @@ class Ride
         @@all
     end
 
+    def average_distance
+
+        # Returns the average distance across ALL rides
+
+    end
+
 
 end
