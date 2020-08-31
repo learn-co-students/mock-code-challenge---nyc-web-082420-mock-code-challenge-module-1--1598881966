@@ -1,7 +1,7 @@
 
 class Ride
 
-    ## how do you ensure that distance is always initialized as a float??
+    ## how do you ensure that distance is always initialized as a float?? .to_f in the initalize?
 
     attr_accessor :passenger, :driver, :distance
     @@all = []

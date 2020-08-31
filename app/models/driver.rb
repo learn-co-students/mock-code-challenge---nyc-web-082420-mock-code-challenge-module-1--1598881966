@@ -21,12 +21,20 @@ class Driver
         self.rides.map { |rides| rides.passenger }.uniq
     end
 
-    ##helper method to find total mileage for each driver (same as passenger)
-    def total_distance
-        self.rides.sum { |rides| rides.distance }
+    #final version of mileage_cap
+    def self.mileage_cap(distance)
+        self.all.filter { |drivers| drivers.rides.sum { |rides| rides.distance } > distance }
     end
 
-    def self.mileage_cap(distance)
-        self.all.filter { |drivers| drivers.total_distance > distance }
-    end
+
+    # ## first attempt --- helper method to find total mileage for each driver (same as passenger)
+    
+    # def total_distance
+    #     self.rides.sum { |rides| rides.distance }
+    # end
+
+    # def self.mileage_cap_with_helper(distance)
+    #     self.all.filter { |drivers| drivers.total_distance > distance }
+    # end
+
 end
