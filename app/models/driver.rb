@@ -2,7 +2,7 @@ class Driver
     attr_reader :name 
     @@all = [] 
 
-    def initialized(name)
+    def initialize(name)
         @name = name 
         @@all << self 
     end
@@ -12,7 +12,7 @@ class Driver
     end
 
     def passenger_names
-
+        Ride.all.select { |names| names.rides == self}.uniq
     end
 
     def rides 
@@ -20,6 +20,10 @@ class Driver
     end
 
     def self.mileage_cap(distance)
+        Ride.all.map { |cap| 
+            if cap.distance > distance 
+            return cap.driver
+        }
     end
 
 
