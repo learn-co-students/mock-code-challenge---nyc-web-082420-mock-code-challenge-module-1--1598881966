@@ -2,6 +2,7 @@
 class Ride 
     
     attr_accessor :passenger, :driver 
+    attr_reader :distance 
 
     @@all = []
 
@@ -17,7 +18,6 @@ class Ride
     end 
 
     def self.average_distance
-        @@all
     end 
 
 end 

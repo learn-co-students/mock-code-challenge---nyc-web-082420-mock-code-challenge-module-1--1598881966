@@ -7,5 +7,7 @@ end
 
 
 # Put your variables here~!
+john = Passenger.new("John", 10, "Joe")
+Casey = Passenger.new("Casey",15,"Tom")
 
 binding.pry
