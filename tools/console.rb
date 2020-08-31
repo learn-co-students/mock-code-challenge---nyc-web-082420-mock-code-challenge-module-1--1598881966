@@ -22,8 +22,10 @@ ride1 = Ride.new(steve, lance, 42.7)
 ride2 = Ride.new(henry, lance, 3.2)
 ride3 = Ride.new(henry, alex, 3.2)
 ride4 = Ride.new(helga, alex, 12.1)
-ride5 = Ride.new(bobby, carol, 3.2)
-ride6 = Ride.new(stacey, arnold, 3.2)
+ride5 = Ride.new(bobby, carol, 11.1)
+ride6 = Ride.new(stacey, arnold, 27.2)
 ride7 = Ride.new(bobby, lance, 15.0)
+ride8 = Ride.new(steve, arnold, 99.9)
+ride9 = Ride.new(henry, carol, 91.0)
 
 binding.pry

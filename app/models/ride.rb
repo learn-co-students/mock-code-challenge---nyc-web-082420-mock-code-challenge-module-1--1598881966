@@ -1,6 +1,6 @@
 class Ride
 
-  attr_accessor :driver, :passenger
+  attr_accessor :driver, :passenger, :distance
   @@all = []
 
   def initialize(passenger, driver, distance)
