@@ -1,3 +1,5 @@
+Bryn Knowles
+
 # BetterLyft™ 
 
 ## Deliverables
