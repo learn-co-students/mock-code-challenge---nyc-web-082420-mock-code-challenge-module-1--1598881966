@@ -4,7 +4,19 @@ def reload
   load 'config/environment.rb'
 end
 
+def initialize
+@driver_name = driver_name
+@passenger_name = passenger_name
+@distance = distance
+  end
 
-# Put your variables here~!
+def initialize(name)
+@name = name
+end
+
+def initialize(name)
+  @name = name
+  end  
+
 
 binding.pry
