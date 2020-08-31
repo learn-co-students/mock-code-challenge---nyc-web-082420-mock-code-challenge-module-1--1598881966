@@ -30,7 +30,7 @@ class Passenger
     end
 
     #Returns an array of all Passengers who have travelled over 100 miles in total with the service
-    def self.premium_memebers
+    def self.premium_members
         self.all.filter {|pm| pm.total_distance > 100}
     end 
 
