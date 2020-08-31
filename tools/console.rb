@@ -34,6 +34,8 @@ ride10 = Ride.new(bobby, lance, 14.6)
 #Expect Driver.mileage_cap(100.0) to return:
 #carol(102.1) and arnold (127.1)
 
+#Expect Rides.average_distance to equal 32.0
+
 
 
 binding.pry

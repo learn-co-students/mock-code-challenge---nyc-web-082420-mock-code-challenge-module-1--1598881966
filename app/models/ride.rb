@@ -20,9 +20,7 @@ class Ride
     Ride.all.each do |ride|
       total_distance += ride.distance
     end
-
     total_distance/total_rides
-
   end
 
 end
