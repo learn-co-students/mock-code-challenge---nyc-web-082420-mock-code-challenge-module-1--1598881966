@@ -22,5 +22,4 @@ class Passenger
     end
 
 
-
 end
