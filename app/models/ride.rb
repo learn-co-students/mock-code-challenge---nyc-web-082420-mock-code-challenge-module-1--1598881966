@@ -35,7 +35,11 @@ class Ride #SEAND:The entire time my console is saying that Ride's .all method i
 
     def self.average_distance
        #Returns the average distance across ALL rides
-       
+       combined_distance = 0
+       self.all.select do |ele| 
+         ele[distance] + ele[distance]
+          
+
 
      end
     
