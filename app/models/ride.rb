@@ -19,6 +19,6 @@ class Ride
         self.distance.reduce(0.0) {|sum, num| sum + num}.to_f / distance.size
     end 
 
-end 
+end
 
 

@@ -30,4 +30,4 @@ class Driver
         Ride.mileage_cap(distance).map {|ride| ride.driver}
     end 
 
-end 
+end

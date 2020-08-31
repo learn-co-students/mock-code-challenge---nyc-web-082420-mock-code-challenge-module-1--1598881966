@@ -34,4 +34,4 @@ class Passenger
         self.all.filter {|pm| pm.total_distance > 100}
     end 
 
-end 
+end
