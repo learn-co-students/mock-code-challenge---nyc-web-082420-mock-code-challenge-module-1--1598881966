@@ -16,7 +16,9 @@ class Ride
   end
 
   def self.average_distance
-    # Returns the average distance across ALL rides
+    total_distance = self.all.sum{|ride| ride.distance}
+    average=total_distance/self.all.length
+    average.round(2)
   end
 
 end

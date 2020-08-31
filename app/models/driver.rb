@@ -14,18 +14,20 @@ class Driver
   end
 
   def rides
-    # Returns an array of all Rides a driver has made
+    Ride.all.filter{|ride| ride.driver == self}
   end
 
   def passenger_names
-    # Returns an array of all Passengers' names a driver has driven. The names should be **unique** (no repeats).
+    passenger_names = rides.map{|ride| ride.passenger.name }
+    passenger_names.uniq
+  end
 
-    #via rides
-    # .uniq
+  def mileage
+    rides.sum{|ride| ride.distance}
   end
 
   def self.mileage_cap(distance)
-    # Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
+    @@all.filter{|driver| driver.mileage > distance}
   end
 
 end

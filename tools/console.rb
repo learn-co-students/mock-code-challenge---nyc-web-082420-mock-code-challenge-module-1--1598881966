@@ -19,8 +19,9 @@ needs_coffee = Driver.new('needs_coffee')
 
 Ride.new(stupid_face, bob, 23.3)
 Ride.new(needs_coffee, bob, 1.43)
-Ride.new(stupid_face, bob, 9)
+Ride.new(stupid_face, bob, 99)
 Ride.new(needs_coffee, haley, 4)
+Ride.new(needs_coffee, haley, 78)
 
 
 binding.pry

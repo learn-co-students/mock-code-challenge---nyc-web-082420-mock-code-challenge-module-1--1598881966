@@ -19,15 +19,16 @@ class Passenger
   end
 
   def drivers
-    #driver instances via rides
+    rides.map{|ride| ride.driver}
   end
 
   def total_distance
-    # Returns the floating number that represents the total distance the passenger has travelled using the service
+    rides.sum{|ride| ride.distance}
   end
 
   def self.premium_members
-    # Returns an array of all Passengers who have travelled over 100 miles in total with the service
+    @@all.filter {|pass| pass.total_distance > 100}
+
   end
 
 end
