@@ -18,12 +18,12 @@ class Driver
 
     # REVIEW - passenger names method returns array of all Passenger names driver has driven. Should be uniq
     def passenger_names
-        Ride.all.select {}
+        Ride.all.select {|passenger| passenger.driver == self}
     end
 
     # drives method returns array of all rides driver has made
     def rides
-        Ride.all.filter {|driver| drivre.name == self}
+        Ride.all.filter {|driver| driver.name == self}
     end
 
     # class method all should return all Drivers
@@ -31,9 +31,9 @@ class Driver
         @@all
     end
 
-    #REVIEW - mileage_cap w/arg of distance returns array of all Drivers who drove over distance
+    #REVIEW (unsure of syntax) - mileage_cap w/arg of distance returns array of all Drivers who drove over distance
     def self.mileage_cap(distance)
-        Ride.all.filter{|distance| distance.driver >= distance.to_f}
+        Ride.all.filter{|driver| driver.distance > distance}
     end
     
 end
