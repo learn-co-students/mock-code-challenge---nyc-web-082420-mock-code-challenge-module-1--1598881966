@@ -21,8 +21,8 @@ class Driver
     #We have: the rides method containing the relationship from driver to passenger through Ride
     #We're looking at each element inside of an array which is an entire passenger instance
     #Once I have the passenger instance, I can perform .name to find their names
-    def passenger_names(search_name)
-        self.rides.filter {|passenger| passenger.name == search_name}.uniq
+    def passenger_names
+        self.rides.filter {|passenger| passenger.name}.uniq
     end 
 
     #Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
