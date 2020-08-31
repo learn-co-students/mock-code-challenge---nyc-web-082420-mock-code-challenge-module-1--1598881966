@@ -23,7 +23,7 @@ class Passenger
   end
 
   def total_distance
-    rides.sum{|ride| ride.distance}
+    rides.sum{|ride| ride.distance}.round(2)
   end
 
   def self.premium_members
