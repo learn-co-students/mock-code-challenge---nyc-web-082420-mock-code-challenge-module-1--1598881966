@@ -1,6 +1,7 @@
 class Passenger
 
-  attr_accessor :name
+  attr_accessor
+  attr_reader :name
   @@all = []
 
   def initialize(name)
@@ -10,6 +11,10 @@ class Passenger
 
   def self.all
     @@all
+  end
+
+  def rides
+    
   end
 
 end
