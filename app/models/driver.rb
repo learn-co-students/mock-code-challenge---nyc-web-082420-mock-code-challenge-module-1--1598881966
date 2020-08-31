@@ -27,7 +27,7 @@ class Driver
 
     #Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
     def self.mileage_cap(distance)
-        Ride.distance.map {|ride| ride.driver}
+        Ride.distance.map {|ride| ride.driver}.to_f
     end 
 
 end
