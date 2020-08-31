@@ -23,9 +23,9 @@ class Passenger
     def total_distance
         rides.map{|ride|ride.distance}.sum
     end
-    
+
     def self.premium_members
-        @@all.filter{|passenger|passenger.total_distance > 15.0}
+        @@all.filter{|passenger|passenger.total_distance > 100.0}
     end
-\
+
 end
